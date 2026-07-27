@@ -1,1 +1,159 @@
-/* Placeholder — full styles coming in Phase 2 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* ── Variables ── */
+:root {
+  --orange: #F15A22;
+  --navy:   #002147;
+  --white:  #FFFFFF;
+  --gray-light: #F5F5F5;
+  --gray-mid:   #E0E0E0;
+  --gray-text:  #555555;
+  --nav-height: 84px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background: var(--white);
+  padding-top: var(--nav-height);
+}
+img { max-width: 100%; display: block; }
+a { color: var(--orange); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Layout container ── */
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Navbar ── */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-height);
+  background: var(--navy);
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.nav-logos img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.nav-links a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--orange);
+  text-decoration: none;
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ── Page header (used on inner pages) ── */
+.page-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 48px 0 40px;
+  text-align: center;
+}
+.page-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.page-header p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ── Section ── */
+.section {
+  padding: 56px 0;
+}
+.section-alt {
+  background: var(--gray-light);
+}
+.section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.section p {
+  color: var(--gray-text);
+  max-width: 720px;
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 20px 24px;
+  text-align: center;
+}
+.footer-container p {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: var(--navy);
+    padding: 12px 0 20px;
+    gap: 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { border-radius: 0; padding: 12px 24px; }
+  .footer-container { flex-direction: column; align-items: flex-start; }
+}
