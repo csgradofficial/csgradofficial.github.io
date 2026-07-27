@@ -1,9 +1,8 @@
 const NAV_HTML = `
 <nav class="navbar">
   <div class="nav-container">
-    <a href="index.html" class="nav-logos">
+    <a href="index.html" class="nav-logo-left">
       <img src="logos/csgradlogo.jpeg" alt="CSGRAD Logo" />
-      <img src="logos/UT-sananotonio-logo.webp" alt="UTSA Logo" />
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
@@ -12,13 +11,25 @@ const NAV_HTML = `
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="resources.html">Resources</a></li>
     </ul>
+    <a href="https://utsa.edu" class="nav-logo-right">
+      <img src="logos/UT-sananotonio-logo.webp" alt="UTSA Logo" />
+    </a>
   </div>
 </nav>`;
 
 const FOOTER_HTML = `
-<footer class="footer">
-  <div class="footer-container">
-    <p>&copy; 2025 CSGRAD UTSA. All rights reserved.</p>
+<footer>
+  <div class="footer-links">
+    <div class="container">
+      <span>Related Links:</span>
+      <a href="https://caicc.utsa.edu/computer-science/" target="_blank" rel="noopener">CS Department at UTSA</a>
+      <a href="https://www.utsa.edu/" target="_blank" rel="noopener">UTSA</a>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 CSGRAD UTSA. All rights reserved.</p>
+    </div>
   </div>
 </footer>`;
 
