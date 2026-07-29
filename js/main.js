@@ -8,8 +8,7 @@ const NAV_HTML = `
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
       <li><a href="officers.html">Officers</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="resources.html">Resources</a></li>
+      <li><a href="resources.html">Resources and FAQ</a></li>
     </ul>
     <a href="https://utsa.edu" class="nav-logo-right">
       <img src="logos/UT-sananotonio-logo.webp" alt="UT San Antonio Logo" />

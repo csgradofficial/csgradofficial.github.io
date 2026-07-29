@@ -10,10 +10,10 @@ Current and prospective CS graduate students at UT San Antonio who need a centra
 There is no dedicated online presence for CSGRAD UT San Antonio. Students lack a single place to learn about the association, find out who leads it, get answers to common questions, and access graduate school resources.
 
 ## Goal / Deliverable
-A clean, informational brochure site with four distinct pages — **About, Officers, FAQ, and Resources** — deployed on GitHub Pages under the [`csgradofficial`](https://github.com/csgradofficial) organization account. Live at [csgradofficial.github.io](https://csgradofficial.github.io).
+A clean, informational brochure site with three distinct pages — **About, Officers, and Resources and FAQ** — deployed on GitHub Pages under the [`csgradofficial`](https://github.com/csgradofficial) organization account. Live at [csgradofficial.github.io](https://csgradofficial.github.io).
 
 ## Success Criteria
-- All four pages are live and publicly accessible via GitHub Pages
+- All three pages are live and publicly accessible via GitHub Pages
 - Site is visually consistent with UT San Antonio branding (colors, typography)
 - Navigation links in the top menu correctly route to each dedicated page
 - Logos (CSGRAD and UT San Antonio) are displayed correctly
@@ -25,4 +25,4 @@ A clean, informational brochure site with four distinct pages — **About, Offic
 - UT San Antonio color palette (orange and navy blue)
 - Open Sans typography (matching the clean sans-serif style of bouldercsgrads.org)
 - Logo assets sourced from `logos/` folder (csgradlogo.jpeg, UT-sananotonio-logo.webp)
-- Four pages: About, Officers, FAQ, Resources
+- Three pages: About, Officers, Resources and FAQ

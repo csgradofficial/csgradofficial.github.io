@@ -31,8 +31,7 @@
 - **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us) + Contact cards (Email, Discord)
 - **About** (`about.html`) — Who We Are, What We Do (3 cards), Get Involved CTA
 - **Officers** (`officers.html`) — Executive Board cards (President, VP, Treasurer, PR Secretary, Web Secretary), Board Members, Alumni Officers by year (2023–2025)
-- **FAQ** (`faq.html`) — pending content
-- **Resources** (`resources.html`) — 4 collapsible sections: Living in San Antonio, Practical Services, Health & Wellness, Financial Support (content sourced from the Welcome to San Antonio packet)
+- **Resources and FAQ** (`resources.html`) — 4 collapsible sections: Living in San Antonio, Practical Services, Health & Wellness, Financial Support. FAQ will be added as a 5th collapsible section when content is provided
 
 ## Assets
 - `logos/csgradlogo.jpeg` — CSGRAD logo (also used as favicon)
