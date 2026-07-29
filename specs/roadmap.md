@@ -6,5 +6,5 @@
 - [x] Phase 4: About page (`about.html`) — "Who We Are" (full mission), "What We Do" (3 cards), "Get Involved" CTA. Bylaws section removed per user request
 - [x] Phase 5: Officers page (`officers.html`) — Executive Board cards (President Nadia, VP Mohammad, Treasurer Rojan, PR Rambod, Web Sec Nasim), Board Member (Sakib), and Alumni section (2023/2024/2025). Rambod's photo/bio/LinkedIn pending
 - [ ] Phase 6: FAQ page (`faq.html`) — collapsible Q&A. Questions pending from user
-- [ ] Phase 7: Resources page (`resources.html`) — 4 dropdown sections (Living in San Antonio, Practical Services, Health & Wellness, Financial Support) with content copied from the "Welcome to San Antonio" packet (10 Google Docs, all publicly accessible via export URL). Include membership Google Form link when available
-- [ ] Phase 8: Deploy + verify — confirm all pages load on GitHub Pages, check mobile responsiveness, verify logos and photos render correctly
+- [x] Phase 7: Resources page (`resources.html`) — 4 collapsible `<details>` sections (Living in San Antonio, Practical Services, Health & Wellness, Financial Support) with content copied from the "Welcome to San Antonio" packet, filtered of religious/ward references. Membership Google Form link still pending
+- [x] Phase 8: Deploy + verify — site is live at `https://csgradofficial.github.io`. All 5 pages load; logos, photos, and accordions render correctly. Responsive CSS in place via `@media max-width: 720px` (mobile nav toggle, footer stacking). FAQ page is empty pending Phase 6

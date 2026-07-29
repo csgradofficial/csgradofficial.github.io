@@ -63,7 +63,7 @@ a:hover { text-decoration: underline; }
 .nav-logo-left  { justify-self: start; }
 .nav-logo-right { justify-self: end; }
 .nav-logo-left img {
-  height: 75px;
+  height: 110px;
   width: auto;
   object-fit: contain;
 }

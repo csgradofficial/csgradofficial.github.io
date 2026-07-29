@@ -17,8 +17,10 @@
   - White: `#FFFFFF`
   - Light gray: `#F5F5F5`
 - **Typography** — Open Sans (Google Fonts), 400/600/700 weights
-- **Nav layout** — CSS grid (`1fr auto 1fr`): CSGRAD logo left, nav links centered, UT San Antonio logo right; fixed top bar (125px height); white-padded logo frames on navy background
-- **Footer** — dark navy "related links" bar (CS Department, UT San Antonio, GitHub) above a navy copyright bar
+- **Nav layout** — CSS grid (`1fr auto 1fr`): CSGRAD logo left, nav links centered, UT San Antonio logo right; fixed top bar (125px height); white-padded logo frames on navy background; both logos sized at 110px height for visual balance
+- **Footer** — dark navy "related links" bar (CS Department at UT San Antonio, UT San Antonio, GitHub) above a navy copyright bar
+- **Accordion** — native HTML `<details>`/`<summary>` with custom + / − indicators (used on Resources page)
+- **Favicon** — CSGRAD logo set on every page via `<link rel="icon">`
 
 ## Modularity
 - Nav and footer HTML defined once in `js/main.js` as template literals (`NAV_HTML`, `FOOTER_HTML`) and injected into `#nav-placeholder` / `#footer-placeholder` divs on every page
@@ -26,11 +28,11 @@
 - To update global styles: edit `css/style.css` only
 
 ## Content Structure
-- **Home** (`index.html`) — hero + contact cards
+- **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us) + Contact cards (Email, Discord)
 - **About** (`about.html`) — Who We Are, What We Do (3 cards), Get Involved CTA
-- **Officers** (`officers.html`) — Executive Board cards, Board Members, Alumni by year
+- **Officers** (`officers.html`) — Executive Board cards (President, VP, Treasurer, PR Secretary, Web Secretary), Board Members, Alumni Officers by year (2023–2025)
 - **FAQ** (`faq.html`) — pending content
-- **Resources** (`resources.html`) — 4 dropdown accordion sections (pending content)
+- **Resources** (`resources.html`) — 4 collapsible sections: Living in San Antonio, Practical Services, Health & Wellness, Financial Support (content sourced from the Welcome to San Antonio packet)
 
 ## Assets
 - `logos/csgradlogo.jpeg` — CSGRAD logo (also used as favicon)
