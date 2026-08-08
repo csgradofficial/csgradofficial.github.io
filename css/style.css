@@ -68,11 +68,17 @@ a:hover { text-decoration: underline; }
 }
 .nav-logo-left  { justify-self: start; }
 .nav-logo-right { justify-self: end; }
-.nav-logo-left img,
-.nav-logo-right img {
+.nav-logo-left img {
   height: 105px;
   width: 105px;
   object-fit: contain;
+  border-radius: 50%;
+}
+.nav-logo-right img {
+  height: 114px;
+  width: 114px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
 }
 .nav-links {
