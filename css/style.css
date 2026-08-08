@@ -55,7 +55,7 @@ a:hover { text-decoration: underline; }
 .nav-logo-left,
 .nav-logo-right {
   --frame-size: 130px;
-  --teeth: 22;
+  --teeth: 40;
   width: var(--frame-size);
   height: var(--frame-size);
   display: inline-flex;
@@ -63,15 +63,15 @@ a:hover { text-decoration: underline; }
   justify-content: center;
   border-radius: 50%;
   background:
-    radial-gradient(closest-side, var(--white) 68%, transparent 69%),
+    radial-gradient(closest-side, var(--white) 88%, transparent 89%),
     repeating-conic-gradient(var(--white) 0 calc(180deg / var(--teeth)), transparent 0 calc(360deg / var(--teeth)));
 }
 .nav-logo-left  { justify-self: start; }
 .nav-logo-right { justify-self: end; }
 .nav-logo-left img,
 .nav-logo-right img {
-  height: 78px;
-  width: 78px;
+  height: 105px;
+  width: 105px;
   object-fit: contain;
   border-radius: 50%;
 }
