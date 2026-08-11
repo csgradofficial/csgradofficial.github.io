@@ -428,6 +428,41 @@ a:hover { text-decoration: underline; }
   font-size: 0.88em;
   font-family: 'Courier New', monospace;
 }
+.documents-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.documents-list li { margin-bottom: 10px; }
+.documents-list a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--navy);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.documents-list a:hover {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-color: var(--orange);
+  text-decoration: none;
+}
+.documents-list a::before {
+  content: "\2B07";
+  color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.doc-meta {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: var(--gray-text);
+  font-weight: 400;
+}
 
 /* ── Alumni ── */
 .alumni-grid {
