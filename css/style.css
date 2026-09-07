@@ -69,9 +69,9 @@ a:hover { text-decoration: underline; }
 .nav-logo-left  { justify-self: start; }
 .nav-logo-right { justify-self: end; }
 .nav-logo-left img {
-  height: 105px;
-  width: 105px;
-  object-fit: contain;
+  height: 114px;
+  width: 114px;
+  object-fit: cover;
   border-radius: 50%;
 }
 .nav-logo-right img {
@@ -658,6 +658,6 @@ a:hover { text-decoration: underline; }
     gap: 0;
   }
   .nav-links.open { display: flex; }
-  .nav-links a { border-radius: 0; padding: 12px 24px; }
+  .nav-links a { border-radius: 4px; padding: 6px 10px; margin: 2px auto; display: inline-block; align-self: center; }
   .footer-container { flex-direction: column; align-items: flex-start; }
 }
