@@ -1,9 +1,12 @@
 # Roadmap
 
-- [x] Phase 1: Repo + folder structure — create GitHub repo under `csgradofficial`, set up `index.html`, `about.html`, `officers.html`, `faq.html`, `resources.html`, `css/`, `js/`, `logos/`, enable GitHub Pages
-- [x] Phase 2: Global CSS — UTSA colors, Open Sans typography, grid nav (CSGRAD left, links center, UT San Antonio right), fixed 125px navbar, navy footer with related-links bar
-- [x] Phase 3: Home / landing page (`index.html`) — hero with short mission + 3 CTAs (Learn About Us, Meet Officers, Join Us), contact section (email + Discord). "Join Us!" href="#" awaiting Google Form link
-- [x] Phase 4: About page (`about.html`) — "Who We Are" (full mission), "What We Do" (3 cards), "Get Involved" CTA. Bylaws section removed per user request
-- [x] Phase 5: Officers page (`officers.html`) — Executive Board cards (President Nadia, VP Mohammad, Treasurer Rojan, PR Rambod, Web Sec Nasim), Board Member (Sakib), and Alumni section (2023/2024/2025). Rambod's photo/bio/LinkedIn pending
-- [x] Phase 6+7: Combined "Resources and FAQ" page (`resources.html`) — 4 collapsible `<details>` sections (Living in San Antonio, Practical Services, Health & Wellness, Financial Support) with content copied from the "Welcome to San Antonio" packet, filtered of religious/ward references. FAQ page removed; nav simplified to single "Resources and FAQ" entry. FAQ content will be added as a 5th collapsible section when questions are provided. Membership Google Form link still pending
-- [x] Phase 8: Deploy + verify — site is live at `https://csgradofficial.github.io`. All 5 pages load; logos, photos, and accordions render correctly. Responsive CSS in place via `@media max-width: 720px` (mobile nav toggle, footer stacking). FAQ page is empty pending Phase 6
+- [x] Phase 1: Repo + folder structure — GitHub repo under `csgradofficial`, `index.html`, `about.html`, `officers.html`, `resources.html`, plus `css/`, `js/`, `logos/`, `photos/`, `docs/`. GitHub Pages enabled
+- [x] Phase 2: Global CSS — UT San Antonio colors, Open Sans typography, grid nav (CSGRAD left, links center, UT San Antonio right) with scalloped/gear-style white badge frames, fixed 145px navbar, navy footer with related-links bar
+- [x] Phase 3: Home / landing page (`index.html`) — hero with short mission + 3 CTAs (Learn About Us, Meet Officers, Join Us → Microsoft Forms registration), contact section (email + Discord)
+- [x] Phase 4: About page (`about.html`) — "Who We Are" (full mission), "What We Do" (3 cards), "Get Involved" CTA linked to Microsoft Forms
+- [x] Phase 5: Officers page (`officers.html`) — Executive Board (President Nadia, VP Mohammad, Treasurer Rojan, PR Rambod, Web Sec Nasim), Board Member (Sakib), Alumni section (2025 → 2024 → 2023, reverse chronological)
+- [x] Phase 6+7: Combined "Resources and FAQ" page (`resources.html`) — collapsible `<details>` sections. Current sections: Important Documents (PhD Handbook PDF), UT San Antonio Campus Maps (Main + Downtown PDFs with previews, source map.utsa.edu), VIA Transportation Maps (Mainland + Downtown Link zone maps, source viainfo.net/link), Housing, Transportation, Groceries and Dining, Banking and Finance, Health and Well-Being, Discounts, Travel Funding
+- [x] Phase 8: Deploy + verify — live at `https://csgradofficial.github.io`. All pages load; logos, photos, PDFs, and accordions render correctly. Responsive CSS in place via `@media max-width: 720px` (mobile nav toggle with inset orange highlights, footer stacking)
+
+## Open items
+- [ ] Full FAQ Q&A block (add as an accordion section on the Resources and FAQ page when questions are provided)
