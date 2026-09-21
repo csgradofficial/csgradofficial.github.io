@@ -20,11 +20,12 @@ Add a live, embedded Google Calendar to the CSGRAD UT San Antonio site so member
 
 ## Key Decisions
 - **Provider:** Google Calendar (free) — chosen because the org's official account is `csgrad.official@gmail.com`, so no new account is needed. Boulder uses Outlook because their org uses a `colorado.edu` M365 account; we don't have that.
+- **Calendar reused:** the account's existing primary calendar (label: "csgrad utsa", Calendar ID: `csgrad.official@gmail.com`) — no new calendar was created. This keeps administration simple; if we later want to separate events from personal stuff we can create a dedicated calendar and swap the `src=` param in the iframe.
 - **Embed mechanism:** the standard `<iframe src="https://calendar.google.com/calendar/embed?…">` tag copied from Google Calendar → Settings → Integrate calendar. No JavaScript library, no build step — fits the project's "no build" tech stack.
 - **Placement:** home page section, directly above Contact (Hero → Upcoming Events → Contact). Chosen over a dedicated Events page or a Resources accordion so events are the first substantive content a visitor sees after the hero, without adding a new URL to maintain.
 - **Timezone:** America/Chicago (`ctz=America/Chicago`) is forced so events show in San Antonio time regardless of the visitor's location.
 - **View:** month grid is the default; the built-in Google view switcher is enabled so visitors can flip to Week/Agenda/List without leaving the page.
-- **Subscribe UX:** a single button labeled "Add to your calendar" that links to the public ICS URL. Users' calendar apps handle the subscribe flow.
+- **Subscribe UX:** a single button labeled "Add to your calendar" that links to the public Google sharing URL (`?cid=…`). This opens Google Calendar's "Add other calendar" flow for signed-in Google users; non-Google users can still copy the ICS URL from the calendar's public page. Kept simple — one link, no dropdown.
 
 ## Dependencies
 - **External:** a Google account (`csgrad.official@gmail.com`) with a public calendar named "CSGRAD Events". Requires a human officer to create it and paste the embed URL + ICS URL into `index.html`.
@@ -32,6 +33,6 @@ Add a live, embedded Google Calendar to the CSGRAD UT San Antonio site so member
 - **Hosting:** GitHub Pages continues to serve everything statically. The iframe fetches from Google in the browser.
 
 ## Open Questions
-- **Should past events stay visible?** Google Calendar's month grid shows past days by default; if that's undesirable we can switch the default view to Agenda (upcoming only). To decide during QA.
-- **Calendar ID handoff:** who owns the Google Calendar long-term — the current Web Secretary or the shared org account? Recommend the shared account so it survives officer turnover; documented in tech-stack.md when merged.
+- **Should past events stay visible?** Google Calendar's month grid shows past days by default; if that's undesirable we can switch the default view to Agenda (upcoming only). To decide during QA on the live site.
+- **Calendar ID handoff:** resolved — the shared `csgrad.official@gmail.com` Google account owns the calendar so it survives officer turnover. Recorded in `tech-stack.md`.
 - **Multiple calendars?** If we later want separate calendars (e.g. Social, Academic), the same iframe can accept multiple `src=<calId>` params. Out of scope for this phase.
