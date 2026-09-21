@@ -4,7 +4,7 @@
 Add a live, embedded Google Calendar to the CSGRAD UT San Antonio site so members can see upcoming events at a glance and subscribe to the calendar in their own app. Modeled loosely on Boulder CS Grads' events feature, but improved: Boulder only exposes an ICS subscribe link; we will show a full month grid on-page **and** provide the subscribe flow.
 
 ## In Scope
-- New "Upcoming Events" section on `index.html`, directly below the Contact section
+- New "Upcoming Events" section on `index.html`, directly above the Contact section (page order: Hero → Upcoming Events → Contact)
 - A Google Calendar iframe embed (mode=MONTH by default, view switcher enabled)
 - Timezone locked to America/Chicago
 - "Add to your calendar" button below the iframe linking to the public ICS URL
@@ -21,7 +21,7 @@ Add a live, embedded Google Calendar to the CSGRAD UT San Antonio site so member
 ## Key Decisions
 - **Provider:** Google Calendar (free) — chosen because the org's official account is `csgrad.official@gmail.com`, so no new account is needed. Boulder uses Outlook because their org uses a `colorado.edu` M365 account; we don't have that.
 - **Embed mechanism:** the standard `<iframe src="https://calendar.google.com/calendar/embed?…">` tag copied from Google Calendar → Settings → Integrate calendar. No JavaScript library, no build step — fits the project's "no build" tech stack.
-- **Placement:** home page section, below Contact. The user chose this over a dedicated Events page or a Resources accordion — surfaces events to first-time visitors without adding a new URL to maintain.
+- **Placement:** home page section, directly above Contact (Hero → Upcoming Events → Contact). Chosen over a dedicated Events page or a Resources accordion so events are the first substantive content a visitor sees after the hero, without adding a new URL to maintain.
 - **Timezone:** America/Chicago (`ctz=America/Chicago`) is forced so events show in San Antonio time regardless of the visitor's location.
 - **View:** month grid is the default; the built-in Google view switcher is enabled so visitors can flip to Week/Agenda/List without leaving the page.
 - **Subscribe UX:** a single button labeled "Add to your calendar" that links to the public ICS URL. Users' calendar apps handle the subscribe flow.

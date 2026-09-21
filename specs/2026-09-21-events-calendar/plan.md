@@ -8,7 +8,7 @@
 - [ ] Add one placeholder event so the embed renders non-empty for QA
 
 ## 2. Home page embed
-- [ ] Add a new `<section class="section events-section">` on `index.html`, directly below the Contact section and above the footer
+- [ ] Add a new `<section class="section events-section">` on `index.html`, directly above the Contact section (order: Hero → Upcoming Events → Contact → Footer)
 - [ ] Insert an `<h2>Upcoming Events</h2>` and an `<iframe>` from the copied embed code
 - [ ] Configure the iframe URL to show the **Month grid** by default (`mode=MONTH`), enable the built-in view switcher (`showTitle=0&showTabs=1&showCalendars=0`), and force `ctz=America/Chicago`
 - [ ] Add responsive wrapper so the iframe scales to 100% width and keeps a 16:10 aspect ratio on desktop; falls back to a taller aspect on narrow viewports
