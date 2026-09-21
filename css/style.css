@@ -632,6 +632,35 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
 }
 
+/* ── Upcoming Events ── */
+.events-intro {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+  max-width: 720px;
+}
+.events-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--gray-mid);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--gray-light);
+}
+.events-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.events-cta {
+  margin-top: 20px;
+}
+@media (max-width: 720px) {
+  .events-embed { aspect-ratio: 3 / 4; }
+}
+
 /* ── Contact cards ── */
 .contact-cards {
   display: flex;
