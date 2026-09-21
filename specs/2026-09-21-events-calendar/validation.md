@@ -15,7 +15,7 @@ The project has no automated test suite — validation is manual, in the browser
 - No changes to `js/main.js`, `about.html`, `officers.html`, or `resources.html`
 
 ## Manual Checks
-1. **Calendar loads and shows a test event** — create a placeholder event in the org's Google Calendar; within ~5 minutes it appears in the embed on both `localhost:8000` and `https://csgradofficial.github.io`
+1. **Calendar loads** — the embed renders (month grid visible) on both `localhost:8000` and `https://csgradofficial.github.io`; adding a real event later shows up within ~5 minutes without any code change
 2. **View switcher works** — toggling Month → Week → Agenda inside the iframe does not reload the page and shows the correct data
 3. **Timezone locked** — an event set for 5:00 PM San Antonio shows as 5:00 PM in the embed regardless of the viewer's local timezone (verified by changing system timezone or using DevTools sensors)
 4. **Subscribe button works** — clicking "Add to your calendar" opens the ICS URL / add-calendar flow in the visitor's default calendar app

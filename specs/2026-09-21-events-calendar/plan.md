@@ -5,7 +5,6 @@
 - [x] Set the calendar to **Public — Make available to public**, "See all event details"
 - [x] Set the calendar timezone to **America/Chicago** (already the account default)
 - [x] From Calendar settings → "Integrate calendar", copy: the public **Calendar ID** (`csgrad.official@gmail.com`), the **Public URL** (`https://calendar.google.com/calendar/u/0?cid=Y3NncmFkLm9mZmljaWFsQGdtYWlsLmNvbQ`), the **Embed code** iframe, and the **Public address in iCal format** (`https://calendar.google.com/calendar/ical/csgrad.official%40gmail.com/public/basic.ics`)
-- [ ] Add one placeholder event so the embed renders non-empty for QA
 
 ## 2. Home page embed
 - [x] Add a new `<section class="section events-section">` on `index.html`, directly above the Contact section (order: Hero → Upcoming Events → Contact → Footer)
@@ -19,7 +18,7 @@
 - [x] Ensure the section respects the existing `.section` padding pattern and mobile breakpoint (`@media max-width: 720px`)
 
 ## 4. QA + Docs
-- [ ] Preview locally: `python3 -m http.server 8000`, confirm the calendar loads with the placeholder event, view switcher works, subscribe button opens the ICS
+- [ ] Preview locally: `python3 -m http.server 8000`, confirm the calendar loads, view switcher works, subscribe button opens the Google "Add other calendar" flow
 - [ ] Mobile check at 400px viewport (Chrome devtools) — no horizontal overflow, iframe reflows, button remains tappable
 - [ ] Cross-check that nav on all pages remains unchanged (no accidental regression from JS edits)
 - [x] Update `specs/roadmap.md` (Phase 9 entry added) and `specs/tech-stack.md` (Google Calendar external ref + Home page structure updated)
