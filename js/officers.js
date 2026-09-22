@@ -11,7 +11,6 @@
     }
 
     const observer = new IntersectionObserver((entries, obs) => {
-      // Stagger cards in each visible batch
       const visible = entries.filter(e => e.isIntersecting);
       visible.forEach((entry, i) => {
         const el = entry.target;
