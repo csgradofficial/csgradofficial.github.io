@@ -31,7 +31,7 @@
 - To update global styles: edit `css/style.css` only
 
 ## Content Structure
-- **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us → Microsoft Forms), Upcoming Events section (embedded Google Calendar iframe with view switcher + "Add to your calendar" button), contact cards (Email, Discord)
+- **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us → Microsoft Forms), Upcoming Events section (embedded Google Calendar iframe with view switcher + "Add to your calendar" button), contact cards (Email, Discord, Instagram)
 - **About** (`about.html`) — Who We Are, What We Do (3 cards), Get Involved CTA linked to Microsoft Forms
 - **Officers** (`officers.html`) — Executive Board cards (President, VP, Treasurer, PR Secretary, Web Secretary), Board Members, Alumni Officers by year in reverse chronological order (2025 → 2024 → 2023)
 - **Resources and FAQ** (`resources.html`) — collapsible `<details>` sections: Important Documents, UT San Antonio Campus Maps, VIA Transportation Maps, Housing, Transportation, Groceries and Dining, Banking and Finance, Health and Well-Being, Discounts, Travel Funding
@@ -48,6 +48,7 @@
 - Campus maps source: `https://map.utsa.edu`
 - VIA transportation maps source: `https://www.viainfo.net/link`
 - Discord community: `https://discord.gg/RdWePc4hA3`
+- Instagram: `https://www.instagram.com/csgrad.official/`
 - Contact email: `csgrad.official@gmail.com`
 - **Google Calendar** (events feed) — public calendar on `csgrad.official@gmail.com`
   - Embed URL: `https://calendar.google.com/calendar/embed?src=csgrad.official%40gmail.com&ctz=America%2FChicago&mode=MONTH&...` (see the iframe in `index.html`'s Upcoming Events section)
