@@ -1,5 +1,6 @@
 const NAV_HTML = `
 <nav class="navbar">
+  <canvas class="matrix-rain nav-matrix" aria-hidden="true"></canvas>
   <div class="nav-container">
     <a href="index.html" class="nav-logo-left">
       <img src="logos/csgradlogo.jpeg" alt="CSGRAD Logo" />
