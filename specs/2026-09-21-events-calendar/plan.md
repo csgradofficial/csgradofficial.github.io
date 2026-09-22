@@ -18,8 +18,8 @@
 - [x] Ensure the section respects the existing `.section` padding pattern and mobile breakpoint (`@media max-width: 720px`)
 
 ## 4. QA + Docs
-- [ ] Preview locally: `python3 -m http.server 8000`, confirm the calendar loads, view switcher works, subscribe button opens the Google "Add other calendar" flow
-- [ ] Mobile check at 400px viewport (Chrome devtools) — no horizontal overflow, iframe reflows, button remains tappable
-- [ ] Cross-check that nav on all pages remains unchanged (no accidental regression from JS edits)
+- [x] Preview locally: `python3 -m http.server 8000`, confirm the calendar loads, view switcher works, subscribe button opens the Google "Add other calendar" flow
+- [x] Mobile check at 400px viewport (Chrome devtools) — no horizontal overflow, iframe reflows, button remains tappable
+- [x] Cross-check that nav on all pages remains unchanged (no accidental regression from JS edits)
 - [x] Update `specs/roadmap.md` (Phase 9 entry added) and `specs/tech-stack.md` (Google Calendar external ref + Home page structure updated)
-- [x] Commit and push branch (`feature/events-calendar` pushed to origin; PR link: `https://github.com/csgradofficial/csgradofficial.github.io/pull/new/feature/events-calendar`)
+- [x] Commit and push branch, then merge `feature/events-calendar` → `main` (merged 2026-09-22 via a no-ff merge commit)
