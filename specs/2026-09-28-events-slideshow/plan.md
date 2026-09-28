@@ -1,11 +1,11 @@
 # Plan: Events Slideshow
 
 ## 1. Photo processing
-- [ ] Verify `sips` and `cwebp` availability on macOS (built-in `sips` should handle HEIC → JPG and resizing)
-- [ ] Create output directory `photos/events/game-mingling-2026-09-24/`
-- [ ] Convert the 2 `.HEIC` files to `.jpg` and resize all 7 photos to max 1600px on the long edge, quality ~80
-- [ ] Confirm each processed file is under 500 KB and total set is under 3 MB
-- [ ] Keep the original source folder (`photos/GAME+MINGLING(Sep 24, 2026)/`) out of the deployed repo — either move originals outside the repo or gitignore that specific path
+- [x] Verify `sips` available on macOS (`/usr/bin/sips`)
+- [x] Create output directory `photos/events/game-mingling-2026-09-24/`
+- [x] Convert HEIC → JPG and resize all 7 photos with `sips -Z 1600 -s formatOptions 80`; two large Pixel shots re-resized to 1400px @ q72 to fit budget
+- [x] All 7 processed files are under 500 KB (largest 489 KB); total 2.7 MB
+- [x] Raw source folder `photos/GAME+MINGLING(Sep 24, 2026)/` added to `.gitignore` so originals stay out of the deployed repo
 
 ## 2. Home page markup
 - [ ] Add a new `<section class="section events-gallery">` on `index.html`, between the Upcoming Events section and the Contact section
