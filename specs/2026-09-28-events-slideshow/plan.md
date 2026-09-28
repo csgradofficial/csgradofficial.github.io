@@ -8,33 +8,33 @@
 - [x] Raw source folder `photos/GAME+MINGLING(Sep 24, 2026)/` added to `.gitignore` so originals stay out of the deployed repo
 
 ## 2. Home page markup
-- [ ] Add a new `<section class="section events-gallery">` on `index.html`, between the Upcoming Events section and the Contact section
-- [ ] Section header: `<h2>Recent Events</h2>` with a subtitle line ("Highlights from CSGRAD gatherings")
-- [ ] Slideshow HTML: main stage (one `<img>` visible at a time), left/right arrow buttons, dot indicator row, thumbnail strip
-- [ ] Data source: an inline JSON `<script type="application/json">` block or a `data-*`-attributed list of image paths + alt text, keyed by event, so future events can be added by editing one array
-- [ ] Include a caption line under each photo ("Game + Mingling · Sep 24, 2026")
+- [x] Add a new `<section class="section events-gallery">` on `index.html`, between the Upcoming Events section and the Contact section
+- [x] Section header: `<h2>Recent Events</h2>` + intro paragraph
+- [x] Slideshow HTML: `.slideshow-stage` with 7 `<img class="slide">` elements, prev/next arrow buttons, and a `.slideshow-caption` overlay
+- [x] Empty `.slideshow-dots` and `.slideshow-thumbs` containers populated at runtime by `slideshow.js`
+- [x] Alt text on every image; event-level caption ("Game + Mingling · Sep 24, 2026") shown on the stage
+- [x] `<script src="js/slideshow.js">` added to `index.html`
 
 ## 3. Slideshow behavior (JS)
-- [ ] Create `js/slideshow.js` — pure vanilla, no library
-- [ ] Auto-advance every ~5000 ms; pause on hover of the stage; pause when tab is hidden (`visibilitychange`)
-- [ ] Left/right arrow click, dot click, thumbnail click all jump to a specific index
-- [ ] Keyboard: ← / → arrows navigate when the slideshow has focus (roving `tabindex` on the stage)
-- [ ] Respect `prefers-reduced-motion: reduce` — disable auto-advance and use instant swap instead of fade
-- [ ] Lazy-load photos beyond the first two (native `loading="lazy"` + `decoding="async"`)
+- [x] Create `js/slideshow.js` — vanilla JS, self-contained IIFE, supports multiple `.slideshow` roots per page
+- [x] Auto-advance every ~5000 ms (configurable via `data-autoplay` attribute); pause on hover; pause on `visibilitychange` when the tab is hidden
+- [x] Left/right arrow buttons, dots, thumbnails all jump to a specific slide
+- [x] Keyboard: ← / → arrows navigate when the `.slideshow-stage` has focus (uses `tabindex="0"` + `keydown` handler)
+- [x] Respect `prefers-reduced-motion` — disable auto-advance; CSS also drops transitions
+- [x] Lazy-load photos beyond the first (native `loading="lazy"` + `decoding="async"`)
 
 ## 4. Styling
-- [ ] Add `.events-gallery`, `.slideshow`, `.slideshow-stage`, `.slideshow-arrows`, `.slideshow-dots`, `.slideshow-thumbs` rules to `css/style.css`
-- [ ] Stage: aspect-ratio 16:10 desktop / 4:3 mobile, `object-fit: cover`, rounded corners, subtle border matching site style
-- [ ] Arrows: circular navy buttons with white chevrons; visible always on desktop, larger tap targets on mobile
-- [ ] Dots: small navy dots, active dot orange; sit below the stage
-- [ ] Thumbs: horizontal strip of small square thumbnails; active thumbnail has an orange border
-- [ ] Crossfade transition on stage swap (opacity 0 → 1, ~400 ms)
-- [ ] Mobile breakpoint (`@media max-width: 720px`): hide thumbnails, keep arrows + dots
+- [x] Add `.events-gallery`, `.slideshow`, `.slideshow-stage`, `.slide`, `.slideshow-arrow(-prev/-next)`, `.slideshow-caption`, `.slideshow-dots`, `.slideshow-dot`, `.slideshow-thumbs`, `.slideshow-thumb` rules to `css/style.css`
+- [x] Stage: 16:10 aspect-ratio desktop, 4:3 mobile; `object-fit: cover`; rounded corners with subtle border
+- [x] Arrows: circular translucent navy buttons, orange on hover
+- [x] Dots: gray, active dot orange with slight scale
+- [x] Thumbnails: horizontal strip with orange active border and hover lift; hidden on mobile
+- [x] Crossfade transition on stage swap (opacity, 0.4s)
+- [x] Mobile breakpoint hides thumbnails, shrinks arrows, tightens edges
+- [x] `prefers-reduced-motion` block drops all transitions
 
 ## 5. QA + Docs
-- [ ] Preview locally with `python3 -m http.server 8001`; verify auto-advance, hover pause, all navigation paths, keyboard arrows
-- [ ] Mobile check at 400px width — no horizontal overflow, arrows tappable
-- [ ] Lighthouse or DevTools Network: confirm home page total transfer under ~4 MB with slideshow loaded, LCP still reasonable
-- [ ] Verify `prefers-reduced-motion` disables auto-advance and fade
-- [ ] Update `specs/roadmap.md` (new phase entry) and `specs/tech-stack.md` (Home page content structure + photo path convention)
-- [ ] Commit and merge `feature/events-slideshow` → `main`
+- [x] Local preview server running on `http://localhost:8001`
+- [x] Update `specs/roadmap.md` (new Phase 10 entry) and `specs/tech-stack.md` (home page structure + `photos/events/<slug>/` convention)
+- [ ] Manual browser QA: verify auto-advance, hover pause, keyboard arrows, dot/thumbnail clicks, mobile at 400px, `prefers-reduced-motion` disables auto-advance
+- [ ] Commit all changes and merge `feature/events-slideshow` → `main`

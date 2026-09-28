@@ -31,7 +31,7 @@
 - To update global styles: edit `css/style.css` only
 
 ## Content Structure
-- **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us → Microsoft Forms), Upcoming Events section (embedded Google Calendar iframe with view switcher + "Add to your calendar" button), contact cards (Email, Discord, Instagram)
+- **Home** (`index.html`) — hero with 3 CTAs (Learn About Us, Meet Officers, Join Us → Microsoft Forms), Upcoming Events section (embedded Google Calendar iframe with view switcher + "Add to your calendar" button), Recent Events slideshow (auto-advancing carousel with arrows, dots, and thumbnails; keyboard + hover controls), contact cards (Email, Discord, Instagram)
 - **About** (`about.html`) — Who We Are, What We Do (3 cards), Get Involved CTA linked to Microsoft Forms
 - **Officers** (`officers.html`) — Executive Board cards (President, VP, Treasurer, PR Secretary, Web Secretary), Board Members, Alumni Officers by year in reverse chronological order (2025 → 2024 → 2023)
 - **Resources and FAQ** (`resources.html`) — collapsible `<details>` sections: Important Documents, UT San Antonio Campus Maps, VIA Transportation Maps, Housing, Transportation, Groceries and Dining, Banking and Finance, Health and Well-Being, Discounts, Travel Funding
@@ -41,6 +41,7 @@
 - `logos/UT-sananotonio-logo.webp` — UT San Antonio logo
 - `photos/` — officer headshots (nadia.jpg, Mohammad_Ahmad.png, rojan.jpeg, nasim.png, rambod.png, sakib.jpeg); VIA maps (VIA26_Link-mainland.webp, VIA26_Link-downtown.webp); campus map preview JPGs generated from the PDFs
 - `docs/` — downloadable PDFs (PhD-Handbook-v2025-Fall.pdf, maincampusmap.pdf, downtowncampusmap.pdf)
+- `photos/events/<event-slug>/` — processed event photos for the Recent Events slideshow. First event: `photos/events/game-mingling-2026-09-24/photo-01.jpg` … `photo-07.jpg`. Raw source (HEIC, oversized JPGs) is `.gitignore`d; processing done locally with macOS `sips` (max 1600px long edge, quality ~80, target ≤500 KB per file)
 - All images and PDFs served as static files
 
 ## External References
