@@ -7,6 +7,7 @@ const NAV_HTML = `
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="officers.html">Officers</a></li>
       <li><a href="events.html">Past Events</a></li>
