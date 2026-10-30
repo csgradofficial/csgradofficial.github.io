@@ -803,6 +803,9 @@ a:hover { text-decoration: underline; }
   margin: 0 0 14px;
   line-height: 1.6;
 }
+.featured-event-cta {
+  margin-top: 10px;
+}
 .featured-event-meta {
   list-style: none;
   padding: 0;
