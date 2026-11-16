@@ -907,6 +907,53 @@ a:hover { text-decoration: underline; }
   transition: transform 0.5s ease;
 }
 .past-event:hover .past-event-photo img { transform: scale(1.05); }
+
+/* Slideshow variant for past-event cards (poster + photos) */
+.past-event-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--navy);
+  overflow: hidden;
+}
+.past-event-slideshow {
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+.past-event-slideshow .slideshow-stage {
+  aspect-ratio: auto;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background: var(--navy);
+}
+.past-event-slideshow .slide {
+  object-fit: contain;
+  background: var(--navy);
+}
+.past-event-slideshow .slideshow-arrow {
+  width: 36px;
+  height: 36px;
+  font-size: 1rem;
+}
+.past-event-slideshow .slideshow-arrow-prev { left: 10px; }
+.past-event-slideshow .slideshow-arrow-next { right: 10px; }
+.past-event-slideshow .slideshow-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  margin-top: 0;
+  z-index: 2;
+}
+.past-event-slideshow .slideshow-dot {
+  background: rgba(255, 255, 255, 0.55);
+  width: 8px;
+  height: 8px;
+}
+.past-event-slideshow .slideshow-dot:hover { background: rgba(255, 255, 255, 0.85); }
+.past-event-slideshow .slideshow-dot.is-active { background: var(--orange); }
+.past-event-slideshow .slideshow-thumbs { display: none; }
 .past-event-body {
   padding: 28px 28px 28px 0;
 }
